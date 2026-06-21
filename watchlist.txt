@@ -15,5 +15,5 @@
 #  Example lines below - replace them with your own:
 # ============================================================
 
-TRILLIONS, 0xREPLACE_WITH_REAL_ADDRESS, plasma, below, 0.00050
+TRILLIONS, 0x92A01Ab7317Ac318b39b00EB6704ba56F0245D7a, plasma, below, 0.000495
 MOONCOIN,  0xREPLACE_WITH_REAL_ADDRESS, plasma, above, 0.00210
