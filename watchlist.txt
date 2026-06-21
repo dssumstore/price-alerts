@@ -1,0 +1,19 @@
+# ============================================================
+#  YOUR COIN WATCHLIST
+#  One alert per line, in this order:
+#
+#     LABEL, address, chain, direction, target
+#
+#  - LABEL     : any name you want (just for the message)
+#  - address   : the token contract address from its DexScreener page
+#  - chain     : the chain id, e.g.  plasma   (lowercase)
+#  - direction : "below" = alert when price drops to/under target (buy zone)
+#                "above" = alert when price rises to/over target  (take profit)
+#  - target    : the USD price to alert at
+#
+#  Lines starting with # are ignored. Edit, then Commit. That's it.
+#  Example lines below - replace them with your own:
+# ============================================================
+
+TRILLIONS, 0xREPLACE_WITH_REAL_ADDRESS, plasma, below, 0.00050
+MOONCOIN,  0xREPLACE_WITH_REAL_ADDRESS, plasma, above, 0.00210
