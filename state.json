@@ -2,5 +2,10 @@
   "plasma:0x92a01ab7317ac318b39b00eb6704ba56f0245d7a:below:0.000495": {
     "first": 0.0004761,
     "ref": 0.0004761
+  },
+  "plasma:0xfc8a5aeefad8cc23f629489cdc6b0ec883d04702:below:4.5e-05": {
+    "first": 4.263e-05,
+    "ref": 4.263e-05,
+    "ts": 1782083073.3505893
   }
 }
