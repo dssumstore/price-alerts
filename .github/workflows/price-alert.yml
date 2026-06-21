@@ -1,0 +1,47 @@
+name: Price Alert
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: price-alert
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run price check
+        env:
+          WHATSAPP_PHONE: ${{ secrets.WHATSAPP_PHONE }}
+          WHATSAPP_APIKEY: ${{ secrets.WHATSAPP_APIKEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          REPEAT_ALERT: "false"
+        run: python price_alert.py
+
+      - name: Save which alerts have fired
+        run: |
+          if [ -n "$(git status --porcelain state.json)" ]; then
+            git config user.name "price-alert-bot"
+            git config user.email "bot@users.noreply.github.com"
+            git add state.json
+            git commit -m "update alert state"
+            git push
+          else
+            echo "No state changes."
+          fi
