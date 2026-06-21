@@ -16,4 +16,4 @@
 # ============================================================
 
 TRILLIONS, 0x92A01Ab7317Ac318b39b00EB6704ba56F0245D7a, plasma, below, 0.000495
-MOONCOIN,  0xREPLACE_WITH_REAL_ADDRESS, plasma, above, 0.00210
+BANKLESS,  0xfC8A5aeEfAd8cC23f629489Cdc6b0Ec883D04702, plasma, below, 0.000045
