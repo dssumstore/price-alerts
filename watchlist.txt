@@ -15,7 +15,7 @@
 #  Example lines below - replace them with your own:
 # ============================================================
 
-TRILLIONS, 0x92A01Ab7317Ac318b39b00EB6704ba56F0245D7a, plasma, below, 0.000470
+TRILLIONS, 0x92A01Ab7317Ac318b39b00EB6704ba56F0245D7a, plasma, below, 0.000420
 TRILLIONS, 0x92A01Ab7317Ac318b39b00EB6704ba56F0245D7a, plasma, pump
 BANKLESS, 0xfC8A5aeEfAd8cC23f629489Cdc6b0Ec883D04702, plasma, below, 0.000042
 BANKLESS, 0xfC8A5aeEfAd8cC23f629489Cdc6b0Ec883D04702, plasma, pump
